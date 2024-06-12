@@ -3,7 +3,7 @@
 	"displayName": "biu-template",
 	"description": "一个nodejs模板渲染工具",
 	"publisher": "dgzhuya",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"repository": "https://github.com/dgzhuya/xiu-template",
 	"engines": {
 		"vscode": "^1.85.0"
@@ -62,7 +62,7 @@
 		"webpack-cli": "^5.1.4"
 	},
 	"dependencies": {
-		"@biuxiu/template": "^1.1.4"
+		"@biuxiu/template": "^1.2.0"
 	}
 }
 
