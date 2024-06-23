@@ -29,6 +29,13 @@
 					"dark": "static/template.svg"
 				}
 			}
+		],
+		"grammars": [
+			{
+				"language": "btpl",
+				"scopeName": "source.btpl",
+				"path": "./syntaxes/btpl.tmLanguage.json"
+			}
 		]
 	},
 	"scripts": {

@@ -1,0 +1,45 @@
+{
+	"fileTypes": ["btpl"],
+	"name": "btpl",
+	"patterns": [
+		{
+			"include": "#templateVariable"
+		}
+	],
+	"repository": {
+		"templateVariable": {
+			"patterns": [
+				{
+					"name": "meta.templateVariable.btpl",
+					"begin": "\\{\\%\\s*",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.other.template.btpl"
+						}
+					},
+					"end": "\\s*\\%\\}",
+					"endCaptures": {
+						"0": {
+							"name": "keyword.other.template.btpl"
+						}
+					},
+					"patterns": [
+						{
+							"name": "entity.name.function.btpl",
+							"match": "\\b\\w+(?=@)"
+						},
+						{
+							"name": "keyword.operator.btpl",
+							"match": "@"
+						},
+						{
+							"name": "variable.parameter.btpl",
+							"match": "(?<=@|\\{%\\s*|\\s*\\%\\})\\w+"
+						}
+					]
+				}
+			]
+		}
+	},
+	"scopeName": "source.btpl"
+}
