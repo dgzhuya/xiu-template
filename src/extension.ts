@@ -116,18 +116,17 @@ export function activate(context: vscode.ExtensionContext) {
 			'btpl',
 			{
 				provideCompletionItems(document, position, token, context) {
-					const completionItems = []
+					const completionItems: vscode.CompletionItem[] = []
 					const start = new vscode.Position(position.line, 0)
 					const range = new vscode.Range(start, position)
 					const text = document.getText(range)
 
 					if (text.endsWith('{%')) {
-						completionItems.push(
-							new vscode.CompletionItem(
-								' %}',
-								vscode.CompletionItemKind.Snippet
-							)
+						const item = new vscode.CompletionItem(
+							'Btpl Block',
+							vscode.CompletionItemKind.Snippet
 						)
+						completionItems.push(item)
 					}
 					return completionItems
 				}

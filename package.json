@@ -3,7 +3,7 @@
 	"displayName": "biu-template",
 	"description": "一个nodejs模板渲染工具",
 	"publisher": "dgzhuya",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"repository": "https://github.com/dgzhuya/xiu-template",
 	"engines": {
 		"vscode": "^1.85.0"
@@ -35,6 +35,12 @@
 				"language": "btpl",
 				"scopeName": "source.btpl",
 				"path": "./syntaxes/btpl.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "btpl",
+				"path": "./snippets/btpl.code-snippets.json"
 			}
 		]
 	},
@@ -69,7 +75,7 @@
 		"webpack-cli": "^5.1.4"
 	},
 	"dependencies": {
-		"@biuxiu/template": "^1.2.1"
+		"@biuxiu/template": "^1.2.5"
 	}
 }
 

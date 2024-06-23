@@ -1,0 +1,7 @@
+{
+	"Btpl Block": {
+		"prefix": "{%",
+		"body": ["{% $1 %}"],
+		"description": "Btpl block {% %}"
+	}
+}
