@@ -111,7 +111,29 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
 		updateDisposable,
 		deleteDisposable,
-		renameDisposable
+		renameDisposable,
+		vscode.languages.registerCompletionItemProvider(
+			'btpl',
+			{
+				provideCompletionItems(document, position, token, context) {
+					const completionItems = []
+					const start = new vscode.Position(position.line, 0)
+					const range = new vscode.Range(start, position)
+					const text = document.getText(range)
+
+					if (text.endsWith('{%')) {
+						completionItems.push(
+							new vscode.CompletionItem(
+								' %}',
+								vscode.CompletionItemKind.Snippet
+							)
+						)
+					}
+					return completionItems
+				}
+			},
+			'{'
+		)
 	)
 }
 
