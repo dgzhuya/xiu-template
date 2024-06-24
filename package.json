@@ -75,7 +75,6 @@
 		"webpack-cli": "^5.1.4"
 	},
 	"dependencies": {
-		"@biuxiu/template": "^1.2.5"
+		"@biuxiu/template": "^1.3.1"
 	}
 }
-

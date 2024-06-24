@@ -3,5 +3,15 @@
 		"prefix": "{%",
 		"body": ["{% $1 %}"],
 		"description": "Btpl block {% %}"
+	},
+	"Btpl If": {
+		"prefix": "if",
+		"body": ["{% if@$1 %}"],
+		"description": "Btpl block {% %}"
+	},
+	"Btpl end": {
+		"prefix": "end",
+		"body": ["{% end@ %}$1"],
+		"description": "Btpl block {% %}"
 	}
 }

@@ -25,6 +25,10 @@
 					},
 					"patterns": [
 						{
+							"name": "keyword.operator.btpl",
+							"match": "\\b(if|end)\\b"
+						},
+						{
 							"name": "entity.name.function.btpl",
 							"match": "\\b\\w+(?=@)"
 						},

@@ -131,7 +131,9 @@ export function activate(context: vscode.ExtensionContext) {
 					return completionItems
 				}
 			},
-			'{'
+			'{',
+			'i',
+			'e'
 		)
 	)
 }
