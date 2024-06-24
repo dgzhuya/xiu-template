@@ -2,10 +2,16 @@
 
 > 配合`@biuxiu/template`实现模板工具类型提示功能
 
+### v 1.2.1
+- 支持for循环语句
+  ```btpl
+  
+  ```
+
 ### v 1.2.0
 - 支持条件判断语句
   ```btpl
-  {% if@test %} test str! {% @end %}
+  {% if@test %} test str! {% end@ %}
   ```
 
 ### v 1.1.0

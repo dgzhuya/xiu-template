@@ -26,19 +26,31 @@
 					"patterns": [
 						{
 							"name": "keyword.operator.btpl",
-							"match": "\\b(if|end)\\b"
+							"match": "\\b(if|end|for)\\b"
 						},
 						{
 							"name": "entity.name.function.btpl",
 							"match": "\\b\\w+(?=@)"
 						},
 						{
+							"name": "variable.parameter.btpl",
+							"match": "\\$\\w+"
+						},
+						{
 							"name": "keyword.operator.btpl",
 							"match": "@"
 						},
 						{
+							"name": "keyword.operator.btpl",
+							"match": "$"
+						},
+						{
 							"name": "variable.parameter.btpl",
-							"match": "(?<=@|\\{%\\s*|\\s*\\%\\})\\w+"
+							"match": "\\$\\w+[-_\\w]*"
+						},
+						{
+							"name": "variable.parameter.btpl",
+							"match": "(?<=@|\\{%\\s*|\\s*\\%\\})\\w+[-_\\w]*"
 						}
 					]
 				}
