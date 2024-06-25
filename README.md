@@ -2,10 +2,13 @@
 
 > 配合`@biuxiu/template`实现模板工具类型提示功能
 
+### v 1.2.3
+- 修复for语句块bug
+
 ### v 1.2.1
 - 支持for循环语句
   ```btpl
-  
+  {% for@list %} {% $i %}	{% end@ %}
   ```
 - 在vscode中支持错误警告
 
