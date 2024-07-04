@@ -6,17 +6,27 @@
 	},
 	"Btpl If": {
 		"prefix": "if",
-		"body": ["{% if@$1 %}$2{% end@ %}"],
-		"description": "Btpl block {% %}"
+		"body": ["{% if@$1 %}$2\n{% end@ %}"],
+		"description": "Btpl if"
 	},
 	"Btpl For": {
 		"prefix": "for",
 		"body": ["{% for@$1 %}$2{% end@ %}"],
-		"description": "Btpl block {% %}"
+		"description": "Btpl for"
 	},
 	"Btpl end": {
 		"prefix": "end",
 		"body": ["{% end@ %}$1"],
-		"description": "Btpl block {% %}"
+		"description": "Btpl end"
+	},
+	"Btpl and": {
+		"prefix": "and",
+		"body": ["{% and@[$1] %}$2\n{% end@ %}$3"],
+		"description": "Btpl and"
+	},
+	"Btpl or": {
+		"prefix": "or",
+		"body": ["{% or@[$1] %}$2\n{% end@ %}$3"],
+		"description": "Btpl or"
 	}
 }
