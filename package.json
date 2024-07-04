@@ -30,13 +30,11 @@
 				}
 			}
 		],
-		"grammars": [
-			{
-				"language": "btpl",
-				"scopeName": "source.btpl",
-				"path": "./syntaxes/btpl.tmLanguage.json"
+		"configurationDefaults": {
+			"[btpl]": {
+				"editor.formatOnSave": false
 			}
-		],
+		},
 		"snippets": [
 			{
 				"language": "btpl",
@@ -78,4 +76,3 @@
 		"@biuxiu/template": "^1.4.11"
 	}
 }
-
