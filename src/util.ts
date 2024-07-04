@@ -26,12 +26,12 @@ export const findTsBtpl = (
 			activeFile
 		)
 		if (!curPath) {
-			vscode.window.showInformationMessage('当前编辑文件不在项目中')
+			console.warn('当前编辑文件不在项目中')
 			return
 		}
 		if (!/\/sources\/[a-zA-Z-_0-9]*\.btpl/.test(activeFile)) {
 			console.log('activeFile: ', activeFile)
-			vscode.window.showInformationMessage('当前文件未在工作区')
+			console.warn('当前文件未在工作区')
 			return
 		}
 		return {
